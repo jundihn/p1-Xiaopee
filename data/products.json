@@ -1,0 +1,162 @@
+[
+  {
+      "name": "Laptop ASUS VivoBook",
+      "description": "Laptop 14 inci dengan prosesor Intel Core i5, RAM 8GB, dan SSD 512GB",
+      "price": 10000000,
+      "CategoryId": 1,
+      "imageUrl": "https://i.pinimg.com/474x/8b/cc/d7/8bccd71114d3f27c9b0186e4d094b13e.jpg",
+      "stock": 10
+  },
+  {
+      "name": "Kemeja Pria Slim Fit",
+      "description": "Kemeja pria dengan desain slim fit dan bahan katun berkualitas",
+      "price": 250000,
+      "CategoryId": 2,
+      "imageUrl": "https://i.pinimg.com/564x/ba/47/66/ba4766fad03b707e77692f84151d990d.jpg",
+      "stock": 50
+  },
+  {
+      "name": "Set Peralatan Masak Stainless Steel",
+      "description": "Set peralatan masak berbahan stainless steel dengan 10 item berbeda",
+      "price": 500000,
+      "CategoryId": 3,
+      "imageUrl": "https://i.pinimg.com/564x/12/d3/1f/12d31fc6a2fce7455dd907e8ae4af054.jpg",
+      "stock": 30
+  },
+  {
+      "name": "Oli Mesin Mobil",
+      "description": "Oli mesin mobil dengan viskositas 10W-40 dan kapasitas 4 liter",
+      "price": 200000,
+      "CategoryId": 4,
+      "imageUrl": "https://i.pinimg.com/564x/55/06/e1/5506e1aae532ae4b7c44bb491c928f8c.jpg",
+      "stock": 100
+  },
+  {
+      "name": "Lotion Wajah SPF 30",
+      "description": "Lotion wajah dengan SPF 30 untuk melindungi kulit dari sinar matahari",
+      "price": 100000,
+      "CategoryId": 5,
+      "imageUrl": "https://i.pinimg.com/564x/95/d3/78/95d37855a3391ecc961014bbed5d019c.jpg",
+      "stock": 200
+  },
+  {
+      "name": "Smartwatch Xiaomi Mi Band 6",
+      "description": "Smartwatch dengan layar AMOLED 1.56 inci dan pemantauan detak jantung",
+      "price": 500000,
+      "CategoryId": 1,
+      "imageUrl": "https://i.pinimg.com/474x/e4/f9/31/e4f931ae7ade04bc6833b0c33833ae3b.jpg",
+      "stock": 40
+  },
+  {
+      "name": "Celana Jeans Regular Fit",
+      "description": "Celana jeans pria dengan desain regular fit dan bahan denim berkualitas",
+      "price": 300000,
+      "CategoryId": 2,
+      "imageUrl": "https://i.pinimg.com/564x/4a/a3/cb/4aa3cb0c90fbfb4ca3b3ef1dd044fa7c.jpg",
+      "stock": 60
+  },
+  {
+      "name": "Set Piring Makan Keramik",
+      "description": "Set piring makan dengan motif floral dan 12 piring berbeda",
+      "price": 150000,
+      "CategoryId": 3,
+      "imageUrl": "https://i.pinimg.com/564x/5f/2e/c9/5f2ec9b6c4ba5cde9917f6afe95415e9.jpg",
+      "stock": 25
+  },
+  {
+      "name": "Sparepart Mobil Rem Depan",
+      "description": "Sparepart mobil untuk rem depan dengan bahan kualitas tinggi",
+      "price": 400000,
+      "CategoryId": 4,
+      "imageUrl": "https://i.pinimg.com/564x/2b/d1/d9/2bd1d97f103ffc3dbd3e1b02c94ca141.jpg",
+      "stock": 35
+  },
+  {
+      "name": "Serum Wajah Anti Aging",
+      "description": "Serum wajah dengan kandungan anti aging untuk meremajakan kulit",
+      "price": 150000,
+      "CategoryId": 5,
+      "imageUrl": "https://i.pinimg.com/564x/5b/80/32/5b8032341eb7fee7448062b9f3e0914b.jpg",
+      "stock": 120
+  },
+  {
+      "name": "Speaker Bluetooth JBL Flip 5",
+      "description": "Speaker portabel dengan suara stereo yang jernih dan tahan air",
+      "price": 700000,
+      "CategoryId": 1,
+      "imageUrl": "https://i.pinimg.com/564x/74/d0/ad/74d0adc98a305755c8952b806513f088.jpg",
+      "stock": 15
+  },
+  {
+      "name": "Kaos Polo Pria",
+      "description": "Kaos polo pria dengan bahan katun yang nyaman dipakai sehari-hari",
+      "price": 150000,
+      "CategoryId": 2,
+      "imageUrl": "https://i.pinimg.com/564x/9e/d8/24/9ed824c7f67e809efb74a1aa470a950f.jpg",
+      "stock": 80
+  },
+  {
+      "name": "Set Pisau Dapur Stainless Steel",
+      "description": "Set pisau dapur dengan pegangan ergonomis dan 5 pisau berbeda",
+      "price": 200000,
+      "CategoryId": 3,
+      "imageUrl": "https://i.pinimg.com/564x/32/d8/90/32d89098d0a8a2b9e7085cd8ae415a43.jpg",
+      "stock": 45
+  },
+  {
+      "name": "Oli Mesin Motor",
+      "description": "Oli mesin motor dengan viskositas 10W-30 dan kapasitas 1 liter",
+      "price": 50000,
+      "CategoryId": 4,
+      "imageUrl": "https://i.pinimg.com/564x/bd/e4/55/bde45547d1192af1d3b2e8b2c3b29130.jpg",
+      "stock": 150
+  },
+  {
+      "name": "Sunscreen SPF 50",
+      "description": "Sunscreen dengan SPF 50 untuk melindungi kulit dari sinar UVB dan UVA",
+      "price": 80000,
+      "CategoryId": 5,
+      "imageUrl": "https://i.pinimg.com/564x/e2/c7/6d/e2c76db2f7f204e6f7952ae62cbe0168.jpg",
+      "stock": 170
+  },
+  {
+      "name": "Mouse Gaming Logitech G502",
+      "description": "Mouse gaming dengan sensor optik 16000 DPI dan 11 tombol programable",
+      "price": 600000,
+      "CategoryId": 1,
+      "imageUrl": "https://i.pinimg.com/736x/f8/98/95/f8989509466d489d49bdb9c24289d329.jpg",
+      "stock": 20
+  },
+  {
+      "name": "Kaos Anak Laki-laki",
+      "description": "Kaos anak laki-laki dengan motif kartun yang lucu",
+      "price": 100000,
+      "CategoryId": 2,
+      "imageUrl": "https://i.pinimg.com/564x/ee/07/55/ee0755a47ce339e85d1751f23ee6d066.jpg",
+      "stock": 70
+  },
+  {
+      "name": "Set Sendok Garpu Stainless Steel",
+      "description": "Set sendok garpu berbahan stainless steel dengan 6 set",
+      "price": 100000,
+      "CategoryId": 3,
+      "imageUrl": "https://i.pinimg.com/564x/c0/05/40/c00540f8c561f4ae99193265459f7b53.jpg",
+      "stock": 55
+  },
+  {
+      "name": "Kampas Rem Mobil",
+      "description": "Kampas rem mobil dengan bahan berkualitas untuk performa pengereman maksimal",
+      "price": 300000,
+      "CategoryId": 4,
+      "imageUrl": "https://i.pinimg.com/564x/f5/9d/17/f59d170063d867d4085eff0ec5e4e8b5.jpg",
+      "stock": 40
+  },
+  {
+      "name": "Lipstik Matte",
+      "description": "Lipstik matte dengan warna intens dan tahan lama",
+      "price": 75000,
+      "CategoryId": 5,
+      "imageUrl": "https://i.pinimg.com/564x/f6/6c/eb/f66cebac905ac53186082e30bb4f202f.jpg",
+      "stock": 90
+  }
+]

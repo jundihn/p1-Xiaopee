@@ -1,0 +1,22 @@
+[
+  {
+    "userName": "John Doe",
+    "productName": "Laptop ASUS VivoBook",
+    "quantity": 1,
+    "price": 10000000,
+    "totalPrice": 10000000,
+    "address": "123 Main Street, City, Country",
+    "phoneNumber": "123-456-7890",
+    "CartId": 1
+  },
+  {
+    "userName": "Jane Smith",
+    "productName": "Smartphone Samsung Galaxy S21",
+    "quantity": 2,
+    "price": 13000000,
+    "totalPrice": 26000000,
+    "address": "456 Oak Avenue, Town, Country",
+    "phoneNumber": "987-654-3210",
+    "CartId": 2
+  }
+]

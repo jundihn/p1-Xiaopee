@@ -1,0 +1,26 @@
+[
+  {
+    "name": "John Doe",
+    "dateOfBirth": "1990-05-15",
+    "address": "123 Main Street, City, Country",
+    "phoneNumber": "123-456-7890",
+    "gender": "male",
+    "UserId": 1
+  },
+  {
+    "name": "Jane Smith",
+    "dateOfBirth": "1985-08-22",
+    "address": "456 Oak Avenue, Town, Country",
+    "phoneNumber": "987-654-3210",
+    "gender": "female",
+    "UserId": 2
+  },
+  {
+    "name": "Alex Johnson",
+    "dateOfBirth": "1995-02-10",
+    "address": "789 Maple Lane, Village, Country",
+    "phoneNumber": "456-789-0123",
+    "gender": "male",
+    "UserId": 3
+  }
+]

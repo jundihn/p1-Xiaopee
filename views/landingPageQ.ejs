@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xiaopee</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container"><%- include('_navbar', [isLoggedIn, role, balance]) %></div>
+    <div class="container mt-4">
+      <% if (role === 'admin') { %>
+        <% } else { %>
+          <div class="users mb-4">
+            <a class="btn btn-outline-info btn-sm" href="/userProfile/<%= userId %>">User Profile</a>
+          </div>
+      <% } %>
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              style="height: 430px"
+              src="https://i.pinimg.com/564x/45/73/dd/4573dd3add0dc4cd38ef849ff8463fda.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              style="height: 430px"
+              src="https://i.pinimg.com/564x/26/39/14/263914e2b48356e7c4ad9485290eabb9.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              style="height: 430px"
+              src="https://i.pinimg.com/564x/27/6c/ec/276cecde93379b761fcfbeedad79483c.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <section class="categories py-5">
+      <div style="text-align: center" class="container">
+        <h2 class="mb-4">Kategori Produk</h2>
+        <div style="justify-content: center" class="row">
+          <% datas.forEach(category => { %>
+          <div style="cursor: pointer" class="col-6 col-md-2 mb-4">
+            <div class="card category-card text-center">
+              <div class="card-body">
+                <a
+                  href="/product/category/<%= category.id %>"
+                  style="text-decoration: none; color: black"
+                >
+                  <img
+                    style="height: 150px"
+                    src="<%= category.imageUrl %>"
+                    class="card-img-top mx-auto d-block"
+                    alt="Ini adalah gambar"
+                  />
+
+                  <h6
+                    style="height: 50px; margin: auto"
+                    class="card-title mt-4"
+                  >
+                    <p class="colo"><%= category.name %></p>
+                  </h6>
+                </a>
+              </div>
+            </div>
+          </div>
+          <% }) %>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-products py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <% datas1.forEach(product => { %>
+          <div class="col-md-3 mb-3">
+            <div class="card product-card">
+              <img
+                style="height: 300px"
+                src="<%= product.imageUrl %>"
+                class="card-img-top"
+                alt="Produk 1"
+              />
+              <div style="text-align: center" class="card-body">
+                <h5 style="height: 50px" class="card-title">
+                  <%= product.name %>
+                </h5>
+                <div style="text-align: center" class="see-detail-section">
+                  <p class="card-text"><%= format_currency(product.price) %></p>
+                  <a href="/product/<%= product.id %>" class="btn btn-primary"
+                    >See Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <% }) %>
+        </div>
+      </div>
+    </section>
+
+    <div style="text-align: center" class="see-more-section mb-3">
+      <a
+        class="btn btn-primary"
+        style="text-decoration: none; color: black"
+        href="/products"
+        >See More Products</a
+      >
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <p class="mb-0">&copy; 2024 Xiaopee. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <%- include('_script') %>
+  </body>
+</html>

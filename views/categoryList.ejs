@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container"><%- include('_navbar', [isLoggedIn, role]) %></div>
+
+    <div class="container">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Img</th>
+                <th scope="col">Nama Kategori</th>
+              </tr>
+            </thead>
+            <tbody>
+                <% data.forEach((category, idx) => { %>
+                    <tr>
+                        <th> <%= idx + 1 %> </th>
+                      <td> 
+                        <img style="height: 100px; width: 100px;" src="<%= category.imageUrl %>" alt=""> 
+                    </td>
+                      <td><%= category.name %></td>
+                    </tr>
+               <% }) %>
+            </tbody>
+          </table>
+    </div>
+
+    <%- include('_script') %>
+</body>
+</html>

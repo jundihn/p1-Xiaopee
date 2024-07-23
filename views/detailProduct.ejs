@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <div class="container">
+      <%- include('_navbar', isLoggedIn) %>
+      <div class="row">
+        <div  class="col-4" style="text-align: center">
+          <img 
+            style="width: 400px; height: 400px; margin-top: 50px;"
+            src="<%= data.imageUrl %>"
+            alt=""
+          />
+        </div>
+        <div style="margin-left: 70px; margin-top: 70px;" class="col-6">
+          <h1>Product Name : <%= data.name %></h1>
+          <br />
+          <h3>Price : <%= format_currency(data.price) %></h3>
+          <p><strong>Description</strong> <br /><%= data.description %></p>
+          <br />
+          <h3 style="font-weight: 300;"><strong>Stock :</strong> <%= data.stock %> pcs</h3>
+          <br />
+          <div class="btn-buy" style="text-align: center">
+            <a
+              class="btn btn-success"
+              href="#"
+              style="padding: 0.375rem 20rem"
+              >Buy</a
+            >
+          </div>
+        </div>
+      </div>
+      <%- include('_script') %>
+    </div>
+  </body>
+</html>

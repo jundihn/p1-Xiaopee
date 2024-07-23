@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img
+        src="https://www.pngkey.com/png/detail/117-1170085_cart-logo-toko-online-png.png"
+        alt="Bootstrap"
+        width="30"
+        height="24"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/products">Products</a>
+        </li>
+        
+
+        <% if(role === 'admin') { %>
+        <li class="nav-item">
+          <a class="nav-link" href="/users">Users</a>
+        </li>
+        <li>
+          <a class="nav-link" href="/category/add">Add Category</a>
+        </li>
+        <li>
+          <a class="nav-link" href="/category">Category List</a>
+        </li>
+        <% } else { %>
+          <li>
+            <a style="margin-left: 844px;" class="btn btn-warning me-3" href="/login"
+              >Balance: Rp.<%= balance %></a
+            >
+          </li>
+        <% } %>
+      </ul>
+
+      <div class="d-flex">
+        <% if(isLoggedIn === 'true'|| isLoggedIn == true){ %>
+
+       
+        <a class="btn btn-warning me-3" href="/logout">Log Out</a>
+        <% } else {%>
+        <a class="btn btn-warning me-3" href="/login">Log In</a>
+        <a class="btn btn-primary" href="/signup">Sign Up</a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</nav>

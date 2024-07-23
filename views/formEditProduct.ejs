@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <div class="container">
+      <%- include('_navbar', [isLoggedIn, role]) %>
+      <h1 style="text-align: center">Form Edit Product</h1>
+      <div class="form-section">
+        <form method="post" action="/product/<%= products.CategoryId %>/edit" style="padding: 0px 200px">
+          <div class="mb-3">
+            <label for="name" class="form-label">Product Name</label>
+            <input type="text" class="form-control" id="name" name="name" value="<%= products.name %>"/>
+          </div>
+
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <input
+              type="text"
+              class="form-control"
+              id="description"
+              name="description" value="<%= products.description %>"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input type="number" class="form-control" id="price" name="price" value="<%= products.price %>"/>
+          </div>
+
+          <div class="mb-3">
+            <label for="price" class="form-label">Category</label>
+            <select
+              class="form-select"
+              aria-label="Default select example"
+              name="CategoryId"
+            >
+            <option selected disabled ><%= products.Category.name %></option>
+            <% categories.forEach(category => { %>
+              <option value="<%= category.id %>"><%= category.name %></option>
+              <% }) %>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Update Product</button>
+        </form>
+      </div>
+      <%- include('_script') %>
+    </div>
+  </body>
+</html>

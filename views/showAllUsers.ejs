@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <div class="container">
+      <%- include('_navbar', [isLoggedIn, role, balance]) %>
+      <!-- Search -->
+      <div class="search mb-3">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            name="searchUser"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      <!-- End Of Search -->
+
+      <div class="user-list-section">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">No</th>
+              <th scope="col">Name</th>
+              <th scope="col">Date Of Birth</th>
+              <th scope="col">Address</th>
+              <th scope="col">Phone Number</th>
+              <th scope="col">Gender</th>
+              <th scope="col">Balance</th>
+              <th scope="col">Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% datas.forEach((data, idx) => { %>
+            <tr>
+              <td><%= idx+1 %></td>
+              <td><%= data.name %></td>
+              <td><%= data.dateFormat %></td>
+              <td><%= data.address %></td>
+              <td><%= data.phoneNumber %></td>
+              <td><%= data.gender %></td>
+              <td><%= data.balance %></td>
+              <td><%= data.User.email %></td>
+            </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <%- include('_script') %>
+  </body>
+</html>

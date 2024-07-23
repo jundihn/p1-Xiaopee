@@ -1,0 +1,33 @@
+{
+  "name": "pairproject",
+  "version": "1.0.0",
+  "description": "KELAR JUMAT BOS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcoabelz/pairProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcoabelz/pairProject/issues"
+  },
+  "homepage": "https://github.com/marcoabelz/pairProject#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "nodemailer": "^6.9.13",
+    "pg": "^8.11.5",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

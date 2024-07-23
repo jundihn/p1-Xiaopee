@@ -1,0 +1,27 @@
+[
+  {
+      "id": 1,
+      "name": "Elektronik",
+      "imageUrl": "https://i.pinimg.com/564x/3b/9b/8e/3b9b8e9f4f20fa5b9e9b0391f98f4ad6.jpg"
+  },
+  {
+      "id": 2,
+      "name": "Pakaian",
+      "imageUrl": "https://i.pinimg.com/736x/32/56/17/32561745758810d7e25eb863d25103b6.jpg"
+  },
+  {
+      "id": 3,
+      "name": "Perlengkapan Rumah Tangga",
+      "imageUrl": "https://i.pinimg.com/564x/d1/a0/24/d1a0241384fdf0589c774a072dffb0b4.jpg"
+  },
+  {
+      "id": 4,
+      "name": "Otomotif",
+      "imageUrl": "https://i.pinimg.com/564x/bd/4b/2f/bd4b2fabe88d956fbb4c4e6f0e33f382.jpg"
+  },
+  {
+      "id": 5,
+      "name": "Kesehatan dan Kecantikan",
+      "imageUrl": "https://i.pinimg.com/736x/1d/1a/4a/1d1a4a11350d072fd67e9f67e7bed6aa.jpg"
+  }
+]

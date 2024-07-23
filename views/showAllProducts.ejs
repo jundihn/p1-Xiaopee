@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <div class="container">
+      <%- include('_navbar', [isLoggedIn, role, balance]) %>
+      <!-- Search -->
+      <div class="search mb-3">
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search by product name"
+            aria-label="Search"
+            name="searchProduct"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      <!-- End Of Search -->
+
+      <% if (role === 'admin') { %>
+        <div class="add-product-section mb-3">
+          <a
+            class="btn btn-primary"
+            style="text-decoration: none; color: white"
+            href="/product/add"
+            >Add Product</a
+          >
+        </div>
+      <% } else { %>
+        <p></p>
+      <% } %>
+
+      <div class="products" style="text-align: center">
+        <div class="row">
+          <% datas.forEach(data => { %>
+          <div class="col">
+            <div class="mb-5 card col-3" style="width: 18rem">
+              <img
+                style="height: 300px"
+                src="<%= data.imageUrl %>"
+                class="card-img-top"
+                alt="..."
+              />
+              <div style="padding: 10px 0px 0px 0px" class="card-body">
+                <h5 style="height: 50px" class="card-title">
+                  <%= data.name %>
+                </h5>
+                <!-- <p style="height: 100px" class="card-text">
+                  <%= data.description %>
+                </p> -->
+                <div
+                  style="padding: 10px 0px; background-color: rgb(255, 174, 0)"
+                  class="price-section"
+                >
+                  <h5 class="card-title"><%= format_currency(data.price) %></h5>
+                  <a href="#" class="btn btn-success me-1">Buy</a>
+                  <a href="/product/<%= data.id %>" class="btn btn-primary"
+                    >See Detail</a
+                  >
+                  <% if(role === 'admin') { %>
+                  <a href="/product/<%= data.id %>/edit" class="btn btn-warning"
+                    >Edit</a
+                  >
+                  <a
+                    href="/products/<%= data.id %>/delete"
+                    class="btn btn-danger ms-1 mt-2"
+                    style="background-color: rgb(234, 72, 72)"
+                    >Delete</a
+                  >
+                  <% } else { %>
+                  <p></p>
+                  <% } %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <% }) %>
+        </div>
+      </div>
+    </div>
+    <%- include('_script') %>
+  </body>
+</html>
